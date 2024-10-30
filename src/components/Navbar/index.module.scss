@@ -1,0 +1,48 @@
+@use "@/styles/base/variables.scss" as variables;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #222;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+  width: 100%;
+  padding: 0 100px; /* 200px de distância das bordas laterais */
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  .logo {
+    width: fit-content;
+    height: max-content;
+  }
+
+  .cartButton {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: variables.$dark-button;
+    }
+  }
+
+  .cartCount {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}

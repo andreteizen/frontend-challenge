@@ -1,9 +1,8 @@
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin box-shadow($color, $intensity) {
-  box-shadow: 0 4px 6px rgba($color, $intensity);
+@mixin invisible {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  pointer-events: none;
 }

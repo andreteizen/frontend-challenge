@@ -4,4 +4,6 @@ html,
 body {
   min-height: 100vh;
   background-color: variables.$dark-bg;
+  margin: 0;
+  padding-top: 70px;
 }
