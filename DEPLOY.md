@@ -36,14 +36,19 @@ cd marketplace-nfts
 
 Em seguida, construa a imagem Docker:
 ```bash
-docker-compose build
+npm run docker:create
 ```
 
 2. **Rodar a aplicação:** Após a construção da imagem, inicie os containers:
 ```bash
-docker-compose up -d
+npm run docker:dev
 ```
 
 3.**Acessar a aplicação:**
 A aplicação estará disponível no endereço configurado no servidor, como http://localhost:3000 ou o IP do servidor.
 
+
+4. **Para a imagem no Docker:** 
+```bash
+npm run docker:down
+```
