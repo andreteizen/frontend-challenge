@@ -7,7 +7,7 @@ import {
 } from '@/redux/store/cartSlice'
 import { useDispatch } from 'react-redux'
 import Image from 'next/image'
-import styles from './cartItem.module.scss'
+import styles from './CartItem.module.scss'
 import { motion } from 'framer-motion'
 
 interface CartItemProps {
