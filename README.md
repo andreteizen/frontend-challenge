@@ -70,19 +70,19 @@ Este projeto é um marketplace de NFTs, desenvolvido utilizando **Next.js**, **R
 
 
 ### Estrutura do projeto
-├── public/               # Arquivos públicos (imagens, favicon, etc.)
+    └── public/               # Arquivos públicos (imagens, favicon, etc.)
 
-├── Dockerfile            # Configuração do Docker
+    └── Dockerfile            # Configuração do Docker
 
-├── docker-compose.yml    # Configuração do Docker Compose
+    └── docker-compose.yml    # Configuração do Docker Compose
 
-├── README.md             # Documentação do projeto
+    └── README.md             # Documentação do projeto
 
-└── src
-    ├── components/           # Componentes reutilizáveis da aplicação
+    └── src
+        ├── components/           # Componentes reutilizáveis da aplicação
 
-    ├── app/                # Páginas da aplicação (Next.js)
+        ├── app/                # Páginas da aplicação (Next.js)
 
-    ├── redux/                # Configuração e reducers do Redux
+        ├── redux/                # Configuração e reducers do Redux
 
-    ├── styles/               # Arquivos de estilo SASS
+        ├── styles/               # Arquivos de estilo SASS
