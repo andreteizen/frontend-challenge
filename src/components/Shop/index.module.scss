@@ -1,0 +1,82 @@
+@use "@/styles/base/variables.scss" as variables;
+
+.container {
+  width: 80vw;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productGrid {
+  display: grid;
+  gap: 25px;
+  width: 100%;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.loadMoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top: 40px;
+  height: 80px;
+  width: 400px;
+  margin-top: 10rem;
+}
+
+.progressBar {
+  height: 10px;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background-color: variables.$dark-button; // Fundo mais escuro indicando o progresso faltante
+
+  &::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: var(--progress-width, 0); // Largura dinâmica baseada na progressão
+    background-color: variables.$primary; // Cor da parte preenchida da barra
+    border-radius: 3px;
+    transition: width 1s ease; // Animação suave do progresso
+  }
+}
+
+.loadMore {
+  background-color: variables.$dark-button;
+  color: variables.$text-light;
+  border: none;
+  padding: 16px 32px;
+  border-radius: variables.$border-radius;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+
+  &:hover {
+    background-color: variables.$primary;
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: #ccc;
+      color: #666;
+    }
+  }
+}

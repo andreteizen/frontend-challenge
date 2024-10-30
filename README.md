@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marketplace de NFTs - Front-End Application
 
-## Getting Started
+Este projeto é um marketplace de NFTs, desenvolvido utilizando **Next.js**, **React Query**, **Redux**, **Framer**, **SASS** e configurado com **Docker** e **Docker Compose**. O objetivo é fornecer uma interface amigável e funcional que permite a visualização e compra de NFTs com a funcionalidade de carrinho de compras.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework React para construção de aplicações web.
+- **React Query**: Biblioteca para busca, cache e sincronização de dados.
+- **Redux**: Gerenciamento de estado global da aplicação.
+- **Framer Motion**: Para animações e interações suaves.
+- **SASS**: Preprocessador CSS para estilização modular e reutilizável.
+- **Docker e Docker Compose**: Para configuração e orquestração do ambiente de desenvolvimento.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Exibição de NFTs disponíveis no marketplace.
+- Funcionalidade de carrinho de compras.
+- Gerenciamento de estado global com Redux.
+- Busca e cache de dados via React Query.
+- Animações suaves e interações com Framer Motion.
+- Estilização modular com SASS.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Requisitos
 
-## Learn More
+- **Node.js** (v16 ou superior)
+- **Docker** (para configuração do ambiente de desenvolvimento)
+- **Docker Compose**
 
-To learn more about Next.js, take a look at the following resources:
+## Instalação e Configuração
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Passos para rodar localmente
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone o repositório:**
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/andreteizen/frontend-challenge.git marketplace-nfts
+   cd marketplace-nfts
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Instale as dependências:**
+    ```bash
+        npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Rodar a aplicação em modo de desenvolvimento:**
+    ```bash
+        npm run dev
+    ```
+
+4. **Acesse a aplicação:** Acesse a aplicação localmente em http://localhost:3000.
+
+
+### Utilizando Docker
+
+1. **Construir a imagem Docker:**
+
+   ```bash
+   docker-compose build
+   ```
+
+2. **Rodar os containers:**
+    ```bash
+    docker-compose up
+    ```
+
+3. **Acesse a aplicação:** Acesse a aplicação localmente em http://localhost:3000.
+
+
+
+### Estrutura do projeto
+├── public/               # Arquivos públicos (imagens, favicon, etc.)
+├── Dockerfile            # Configuração do Docker
+├── docker-compose.yml    # Configuração do Docker Compose
+├── README.md             # Documentação do projeto
+└── src
+    ├── components/           # Componentes reutilizáveis da aplicação
+    ├── app/                # Páginas da aplicação (Next.js)
+    ├── redux/                # Configuração e reducers do Redux
+    ├── styles/               # Arquivos de estilo SASS

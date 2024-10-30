@@ -1,8 +1,10 @@
 {
   "extends": [
+    "@rocketseat/eslint-config/next",
     "next/core-web-vitals",
-    "next/typescript",
-    "prettier",
     "plugin:prettier/recommended"
-  ]
+  ],
+  "rules": {
+    "import/no-absolute-path": "off"
+  }
 }

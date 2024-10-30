@@ -1,0 +1,98 @@
+@use "@/styles/base/variables.scss" as variables;
+
+.item {
+  display: flex;
+  width: 90%;
+  background-color: variables.$overlay-card-bg;
+  border-radius: variables.$border-radius;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 1rem;
+
+  transform-origin: center;
+  transition: background-color 0.3s ease;
+
+  .imageConfiguration {
+    border-radius: 8px;
+    height: 160px;
+    width: 160px;
+    margin-right: 2rem;
+  }
+
+  .titulo {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .description {
+    color: variables.$text-gray;
+    font-weight: 300;
+    font-size: 12px;
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+
+  .price {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin: 0;
+    padding: 20px 0;
+    color: variables.$text-light;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .quantityControl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: variables.$dark-bg;
+    border-radius: variables.$border-radius;
+    width: 115px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 3px;
+
+    button {
+      background: none;
+      color: variables.$text-gray;
+      border: 0;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+
+  .deleteButton {
+    background: variables.$primary;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: variables.$primary;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ff4444;
+    }
+
+    img {
+      height: fit-content;
+    }
+  }
+}
