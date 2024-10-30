@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "docker:dev": "docker compose up web-dev",
-    "docker:prod": "docker compose up --build web",
+    "docker:create": "docker compose build",
+    "docker:dev": "docker-compose up -d --build web-dev",
+    "docker:down": "docker-compose stop web-dev",
     "format": "prettier --write ."
   },
   "dependencies": {
