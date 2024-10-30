@@ -79,7 +79,6 @@ Este projeto é um marketplace de NFTs, desenvolvido utilizando **Next.js**, **R
 ├── README.md             # Documentação do projeto
 
 └── src
-
     ├── components/           # Componentes reutilizáveis da aplicação
 
     ├── app/                # Páginas da aplicação (Next.js)
