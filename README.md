@@ -1,5 +1,7 @@
 # Marketplace de NFTs - Front-End Application
 
+**Acesse o projeto:** https://nft-market-challenge.vercel.app/
+
 Este projeto é um marketplace de NFTs, desenvolvido utilizando **Next.js**, **React Query**, **Redux**, **Framer**, **SASS** e configurado com **Docker** e **Docker Compose**. O objetivo é fornecer uma interface amigável e funcional que permite a visualização e compra de NFTs com a funcionalidade de carrinho de compras.
 
 ## Tecnologias Utilizadas
@@ -69,11 +71,19 @@ Este projeto é um marketplace de NFTs, desenvolvido utilizando **Next.js**, **R
 
 ### Estrutura do projeto
 ├── public/               # Arquivos públicos (imagens, favicon, etc.)
+
 ├── Dockerfile            # Configuração do Docker
+
 ├── docker-compose.yml    # Configuração do Docker Compose
+
 ├── README.md             # Documentação do projeto
+
 └── src
+
     ├── components/           # Componentes reutilizáveis da aplicação
+
     ├── app/                # Páginas da aplicação (Next.js)
+
     ├── redux/                # Configuração e reducers do Redux
+
     ├── styles/               # Arquivos de estilo SASS
