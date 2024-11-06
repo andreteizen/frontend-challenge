@@ -1,7 +1,7 @@
 @use "@/styles/base/variables.scss" as variables;
 
 .container {
-  width: 80vw;
+  width: 100%;
   display: flex;
   justify-self: center;
   flex-direction: column;
@@ -12,9 +12,9 @@
 .productGrid {
   display: grid;
   gap: 25px;
-  width: 100%;
+  width: 80%;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
